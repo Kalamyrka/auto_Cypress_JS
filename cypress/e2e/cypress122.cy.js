@@ -1,5 +1,5 @@
 describe("Проверка авторизации", function () {
-    
+
   it("Верный логин и верный пароль", function () {
     cy.visit("https://login.qa.studio/"); // Зайти на сайт
     cy.get("#form").should("be.visible"); // Проверяем, что видна форма
