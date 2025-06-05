@@ -4,8 +4,8 @@ describe("Проверка авторизации", function () {
     cy.visit("https://login.qa.studio/"); // Зайти на сайт
     cy.get("#form").should("be.visible"); // Проверяем, что видна форма
 
-    cy.get("#mail").type("german@dolnikov.ru"); // Ввести почту
-    cy.get("#pass").type("iLoveqastudio1"); // Ввести пароль
+    cy.get("#mail").type("E-MAIL"); // Ввести почту
+    cy.get("#pass").type("PASSWORD"); // Ввести пароль
     cy.get("#loginButton").click(); // Кликнуть на кнопку войти
 
     cy.get("#messageHeader").contains("Авторизация прошла успешно"); // Проверяем текст
@@ -20,7 +20,7 @@ describe("Проверка авторизации", function () {
     cy.get("#forgotEmailButton").click(); // Нажимаем на кнопку восстановить пароль
 
     cy.get("#forgotForm > .header").contains("Восстановите пароль"); // Проверяем форму
-    cy.get("#mailForgot").type("german@dolnikov.ru"); // Вводим почту
+    cy.get("#mailForgot").type("E-MAIL"); // Вводим почту
     cy.get("#restoreEmailButton").click(); // Нажимаем на кнопку отправить код
 
     cy.get("#messageHeader").contains("Успешно отправили пароль на e-mail"); // Проверяем текст
@@ -31,8 +31,8 @@ describe("Проверка авторизации", function () {
     cy.visit("https://login.qa.studio/"); // Зайти на сайт
     cy.get("#form").should("be.visible"); // Проверяем, что видна форма
 
-    cy.get("#mail").type("german@dolnikov.ru"); // Ввести почту
-    cy.get("#pass").type("iLoveqastudio2"); // Ввести пароль
+    cy.get("#mail").type("E-MAIL"); // Ввести почту
+    cy.get("#pass").type("PASSWORD"); // Ввести пароль
     cy.get("#loginButton").click(); // Кликнуть на кнопку войти
 
     cy.get("#messageHeader").contains("Такого логина или пароля нет"); // Проверяем текст
@@ -43,8 +43,8 @@ describe("Проверка авторизации", function () {
     cy.visit("https://login.qa.studio/"); // Зайти на сайт
     cy.get("#form").should("be.visible"); // Проверяем, что видна форма
 
-    cy.get("#mail").type("negerman@dolnikov.ru"); // Ввести почту
-    cy.get("#pass").type("iLoveqastudio1"); // Ввести пароль
+    cy.get("#mail").type("E-MAIL"); // Ввести почту
+    cy.get("#pass").type("PASSWORD"); // Ввести пароль
     cy.get("#loginButton").click(); // Кликнуть на кнопку войти
 
     cy.get("#messageHeader").contains("Такого логина или пароля нет"); // Проверяем текст
@@ -55,8 +55,8 @@ describe("Проверка авторизации", function () {
     cy.visit("https://login.qa.studio/"); // Зайти на сайт
     cy.get("#form").should("be.visible"); // Проверяем, что видна форма
 
-    cy.get("#mail").type("germandolnikov.ru"); // Ввести почту
-    cy.get("#pass").type("iLoveqastudio1"); // Ввести пароль
+    cy.get("#mail").type("E-MAIL"); // Ввести почту
+    cy.get("#pass").type("PASSWORD"); // Ввести пароль
     cy.get("#loginButton").click(); // Кликнуть на кнопку войти
 
     cy.get("#messageHeader").contains("Нужно исправить проблему валидации"); // Проверяем текст
@@ -67,8 +67,8 @@ describe("Проверка авторизации", function () {
     cy.visit("https://login.qa.studio/"); // Зайти на сайт
     cy.get("#form").should("be.visible"); // Проверяем, что видна форма
 
-    cy.get("#mail").type("GerMan@Dolnikov.ru"); // Ввести почту
-    cy.get("#pass").type("iLoveqastudio1"); // Ввести пароль
+    cy.get("#mail").type("E-MAIL"); // Ввести почту
+    cy.get("#pass").type("PASSWORD"); // Ввести пароль
     cy.get("#loginButton").click(); // Кликнуть на кнопку войти
 
     cy.get("#messageHeader").contains("Авторизация прошла успешно"); // Проверяем текст
